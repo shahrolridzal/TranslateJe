@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.application'          // Plugin untuk bina app Android (bukan library)
+}
+
+android {
+    namespace 'com.translateje.app'      // Nama package untuk kod sumber (Java/Kotlin)
+    compileSdk 35                        // Sasaran API Android 15 untuk kompilasi
+
+    defaultConfig {
+        applicationId 'com.translateje.app' // ID unik untuk Play Store & peranti
+        minSdk 23                         // Sokongan minimum: Android 6.0 (Marshmallow)
+        targetSdk 35                      // Disasarkan ke Android 15
+        versionCode 1                     // Nombor versi dalaman (integer, untuk kemas kini)
+        versionName '0.2.0'               // Nombor versi yang dipaparkan kepada pengguna
+    }
+}
